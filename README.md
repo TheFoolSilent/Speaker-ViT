@@ -17,3 +17,8 @@ wave, _ = sf.read("your_wav_file_path")
 tensor_wave = torch.FloatTensor(wave).view(1, -1)
 speaker_embedding = model(tensor_wave)
 ```
+||VoxCeleb1-O|VoxCeleb1-E|VoxCeleb1-H|
+|:---|:---:|:---:|:---:|
+|EER|0.93|1.08|2.05|
+|DCF_0.01|0.1047|0.1216|0.2073|
+|DCF_0.001|0.2004|0.2212|0.3338|
