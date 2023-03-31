@@ -17,6 +17,7 @@ wave, _ = sf.read("your_wav_file_path")
 tensor_wave = torch.FloatTensor(wave).view(1, -1)
 speaker_embedding = model(tensor_wave)
 ```
+Performance of Speaker-ViT(trained on VoxCeleb2 dev + Musan + RIR) using cosine similarity
 ||VoxCeleb1-O|VoxCeleb1-E|VoxCeleb1-H|
 |:---|:---:|:---:|:---:|
 |EER|0.93|1.08|2.05|
