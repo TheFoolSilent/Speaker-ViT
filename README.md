@@ -23,3 +23,13 @@ Performance of Speaker-ViT(trained on VoxCeleb2 dev + Musan + RIR) using cosine 
 |EER|0.93|1.08|2.05|
 |DCF_0.01|0.1047|0.1216|0.2073|
 |DCF_0.001|0.2004|0.2212|0.3338|
+
+Hyperparameters of Speaker-ViT
+|Hyperparameter|value|
+|:---:|:---:|
+|The number of global-local blocks|8|
+|The dimention of global-local blocks|400|
+|The number of MHSA heads|4|
+|The dimension of MHSA heads|64|
+|The dimension of embeddings|400|
+|The dimention scale of TGL|2|
